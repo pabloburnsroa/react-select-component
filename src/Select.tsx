@@ -53,7 +53,7 @@ export function Select({ multiple, value, onChange, options }: SelectProps) {
       if (e.target != containerRef.current) return;
       switch (e.code) {
         case 'Enter':
-        case 'Space': 
+        case 'Space':
           setIsOpen((prev) => !prev);
           if (isOpen) selectOption(options[highlightedIndex]);
           break;
